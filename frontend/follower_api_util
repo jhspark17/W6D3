@@ -1,0 +1,12 @@
+const FollowerApiUtil = {
+  followUser: id => {
+    return $.ajax({
+      method: 'POST',
+      url: `/users/${this.userId}/follow`,
+      dataType: 'JSON'
+    })
+
+  }
+}
+
+module.exports = FollowerApiUtil;
